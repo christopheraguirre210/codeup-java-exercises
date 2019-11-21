@@ -4,14 +4,14 @@ public class HelloWorld {
 //        System.out.print("Hello, World!");
 
 
-        int myFavoriteNumber = 7;
-        System.out.println(myFavoriteNumber);
-
-        String myString = "This is my string.";
-        System.out.println(myString);
-
-        float myNumber = 3.14f;
-        System.out.println(myNumber);
+//        int myFavoriteNumber = 7;
+//        System.out.println(myFavoriteNumber);
+//
+//        String myString = "This is my string.";
+//        System.out.println(myString);
+//
+//        float myNumber = 3.14f;
+//        System.out.println(myNumber);
 
 //        int x = 5;
 //        System.out.println(++x);
@@ -28,12 +28,15 @@ public class HelloWorld {
 //        y *= x;
 //        System.out.println(y);
 
-        int x = 10;
-        int y = 2;
-        x /= y;
-        y -= x;
-        System.out.println(x);
-        System.out.println(y);
+//        int x = 10;
+//        int y = 2;
+//        x /= y;
+//        y -= x;
+//        System.out.println(x);
+//        System.out.println(y);
+
+//        int x =
+//        System.out.println(Integer.MAX_VALUE);
     }
 
 }
