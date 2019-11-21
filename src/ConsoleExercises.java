@@ -59,11 +59,5 @@ public class ConsoleExercises {
         System.out.printf("The perimeter of the classroom is : %.2f units.%n", 2 * width + 2 * length);
         System.out.printf("The area of the classroom is : %.2f units squared.%n", width * length);
 
-
-
-
-
-
-
     }
 }
