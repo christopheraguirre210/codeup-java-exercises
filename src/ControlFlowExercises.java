@@ -8,19 +8,27 @@ public class ControlFlowExercises {
 //            i++;
 //        }
 
+
 //        long i = 2;
 //        do {
 //            System.out.println(i);
 //            i *= i;
 //        } while (i < 1000000);
 
+//        for(int a = 100; a <= 100; a+=2){
+//            System.out.println(a);
+//        }
+
+
 //        for (int i = 5; i <= 15; i++) {
 //            System.out.println("i is " + i);
 //        }
 
+
 //        for(long i = 2; i < 1000000; i*=i) {
 //            System.out.println(i);
 //        }
+
 
 //        for(int i = 1; i < 100; i++){
 //            if(i % 15 == 0){
@@ -34,12 +42,15 @@ public class ControlFlowExercises {
 //            }
 //        }
 
+//Table of Powers
 
         Scanner scanner = new Scanner(System.in);
 //        System.out.println("Enter an integer");
 //        int userinteger = scanner.nextInt();
 //
 //        System.out.println("Here is your table!");
+//        System.out.println("Number|Squared|Cubed");
+//
 //        for(int i = 1; i <= userinteger; i++) {
 //            int squared = i * i;
 //            int cubed = i * i * i;
@@ -55,30 +66,34 @@ public class ControlFlowExercises {
 //            }
 //        }
 
-        System.out.print("Do you want me to check your score? [y/n] ");
-        String testInput = scanner.next();
 
-        boolean testConfirmation = testInput.equalsIgnoreCase("y");
-        if(testConfirmation){
-            do {
-                System.out.println("What did you make on your test");
-                int grade = scanner.nextInt();
-                if (grade >= 88) {
-                    System.out.println("That's an: A");
-                } else if (grade >= 80) {
-                    System.out.println("That's a: B");
-                } else if (grade >= 67) {
-                    System.out.println("That's a: C");
-                } else if (grade >= 60) {
-                    System.out.println("That's a: D");
-                } else {
-                    System.out.println("That's an: F");
-                }
-                System.out.println("more grades?");
-                testInput = scanner.next();
-                testConfirmation = testInput.equalsIgnoreCase("y");
-            }while (testConfirmation);
-    }
+
+//        System.out.print("Do you want me to check your score? [y/n] ");
+//        String testInput = scanner.next();
+//
+//        boolean testConfirmation = testInput.equalsIgnoreCase("y");
+//        if(testConfirmation){
+//            do {
+//                System.out.println("What did you make on your test");
+//                int grade = scanner.nextInt();
+//                if (grade >= 88) {
+//                    System.out.println("That's an: A");
+//                } else if (grade >= 80) {
+//                    System.out.println("That's a: B");
+//                } else if (grade >= 67) {
+//                    System.out.println("That's a: C");
+//                } else if (grade >= 60) {
+//                    System.out.println("That's a: D");
+//                } else {
+//                    System.out.println("That's an: F");
+//                }
+//                System.out.println("more grades?");
+//                testInput = scanner.next();
+//                testConfirmation = testInput.equalsIgnoreCase("y");
+//            }while (testConfirmation);
+//    }
+
+
 
 
 
