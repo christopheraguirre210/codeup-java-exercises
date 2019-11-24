@@ -1,5 +1,5 @@
 public class MethodsLec {
-    public static void main(String[] args) {
+
 
 
 //  METHODS
@@ -8,6 +8,10 @@ public class MethodsLec {
     TO DO TOGETHER: Write a public static method called orderFood that
     prints the message "I would like fries please."
  */
+
+public static void orderFood() {
+            System.out.println("I would like fries please.");
+        }
 
 
 /*
@@ -21,11 +25,19 @@ public class MethodsLec {
     your favorite song.
  */
 
+public static void favoriteSong(){
+        System.out.println("black betty");
+    }
+
 
 /*
     TO DO: Write a public static method called weeksIn that prints
     message saying how many weeks you've been at Codeup.
  */
+
+public static void weeksIn(){
+    System.out.println("Week 10");
+}
 
 
 //  METHOD OVERLOADING
@@ -35,6 +47,19 @@ public class MethodsLec {
     takes in one String parameter which can replace the item they are
     ordering.
  */
+
+public static void orderFood(String food){
+    System.out.printf("I would like %s please\n", food);
+}
+public static void orderFood(int number){
+    System.out.printf("I need %d burgers now!\n", number);
+}
+public static void orderFood(String item1, String item2){
+    System.out.printf("I would like %s and %s\n", item1, item2);
+}
+public static void orderFood(String item, int num){
+    System.out.printf("I want %s and I want %d of them\n", item, num);
+}
 
 /*
     TO DO: Overload orderFood again. Create a version that takes in two
@@ -68,5 +93,14 @@ public class MethodsLec {
 
 // HINT: you may need an additional method using a for loop to actually print
 // each number. This is the one you'll call in your main()
+
+    public static void main(String[] args) {
+        orderFood();
+        orderFood("Steak");
+        orderFood(37);
+        orderFood("Nico's lumpia","All the Pizzas");
+        orderFood("candies",3);
+        favoriteSong();
+        weeksIn();
     }
 }
