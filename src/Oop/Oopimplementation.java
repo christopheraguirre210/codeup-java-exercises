@@ -2,17 +2,28 @@ package Oop;
 
 public class Oopimplementation {
     public static void main(String[] args) {
-        Person rick = new Person();
-        rick.firstName = "Rick";
-        rick.lastName = "Sanchez";
-        System.out.println(rick.sayHello());
-        // prints "Hello from Rick Sanchez!"
 
-        System.out.println(Person.eatsFood);
 
-        Person chris = new Person();
-        chris.firstName = "Chris";
-        chris.lastName = "Aggie";
-        System.out.println(chris.sayHello());
+//        Person chris = new Person("Chris");
+//        System.out.println(chris.sayHello());
+
+//        Person person1 = new Person("Chris");
+//        Person person2 = new Person("Michelle");
+//
+//        System.out.println(person1.getFirstName().equals(person2.getFirstName()));
+//        System.out.println(person1 == person2);
+
+//        Person person1 = new Person("Michelle");
+//        Person person2 = person1;
+//        System.out.println(person1 == person2);
+
+        Person person1 = new Person("Michelle");
+        Person person2 = person1;
+        System.out.println(person1.getFirstName());
+        System.out.println(person2.getFirstName());
+        person2.setFirstName("Chris");
+        System.out.println(person1.getFirstName());
+        System.out.println(person2.getFirstName());
+
     }
 }
