@@ -5,7 +5,13 @@ public class Input {
 
     public static void main(String[] args) {
         Input input = new Input();
+
+        System.out.println("What's your name?");
         System.out.println(input.getString());
+        System.out.println(input.getInt(1,10));
+
+        System.out.println(input.getDouble(1,10));
+
         System.out.println(input.yesNo());
 
     }
@@ -40,6 +46,22 @@ public class Input {
     public int getInt(){
         System.out.println("Give me a number");
         return Integer.parseInt(getString());
+    }
+
+    public double getDouble(double min, double max){
+        double inputNum = getDouble();
+
+        if(inputNum < min) {
+            return getDouble(min, max);
+        }else if (inputNum > max){
+            return getDouble(min, max);
+        }
+        return inputNum;
+    }
+
+    public double getDouble(){
+        System.out.println("Give me a point number");
+        return Double.parseDouble(getString());
     }
 
 
