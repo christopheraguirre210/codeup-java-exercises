@@ -33,7 +33,6 @@ public class Input {
     }
 
     public int getInt(int min, int max) {
-        System.out.println("Please Enter a number");
         int inputNum = getInt();
         if (inputNum < min) {
             return getInt(min, max);
