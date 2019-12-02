@@ -34,8 +34,6 @@ public class ArraysExercises {
 
 
 
-
-
     }
 
 //    public static Person[] addPerson(Person[] people,Person person){

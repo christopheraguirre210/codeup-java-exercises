@@ -43,7 +43,7 @@ public class Input {
     }
 
     public int getInt(){
-        System.out.println("Give me a number");
+//        System.out.println("Give me a number");
         return Integer.parseInt(getString());
     }
 
