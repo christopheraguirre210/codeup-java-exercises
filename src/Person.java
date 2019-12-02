@@ -1,5 +1,3 @@
-package Oop;
-
 public class Person {
 
     public static void main(String[] args) {
@@ -13,7 +11,7 @@ public class Person {
 
     }
 
-        private String firstName;
+        public String firstName;
         private String lastName;
 //        public static long worldPopulation = 7_500_000_000L;
 //        private String ssn;

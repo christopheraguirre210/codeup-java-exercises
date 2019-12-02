@@ -1,5 +1,3 @@
-package Oop;
-
 public class Oopimplementation {
     public static void main(String[] args) {
 
