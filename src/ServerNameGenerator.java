@@ -7,7 +7,7 @@ public class ServerNameGenerator {
         String[] adjectives = {"Scary", "Nice", "Angry", "Cold", "Hot", "Tasty", "Jagged", "Quick", "Vicious", "Kind"};
 
 
-        System.out.println("Your server name is\n" + randomName(adjectives) + " " + randomName(nouns));
+        System.out.println("Your server name is:\n" + randomName(adjectives) + "-" + randomName(nouns));
     }
 
     public static String randomName(String[] arrayString){

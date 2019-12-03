@@ -23,13 +23,13 @@ public class ArraysExercises {
         people[2] = new Person("Riley");
 
         for (Person person : people) {
-            System.out.println(person.firstName);
+            System.out.println(person.getFirstName());
         }
 
        people = addPerson(people, new Person ("yadda"));
 
         for (Person person : people) {
-            System.out.println(person.firstName);
+            System.out.println(person.getFirstName());
         }
 
 
@@ -41,7 +41,7 @@ public class ArraysExercises {
 //    }
 
 
-    public static Person[] addPerson(Person[] people, Person person){
+    private static Person[] addPerson(Person[] people, Person person){
         Person[] newArray = Arrays.copyOf(people, people.length + 1);
         newArray[people.length] = person;
         return newArray;

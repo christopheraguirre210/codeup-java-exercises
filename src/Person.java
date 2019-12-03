@@ -11,7 +11,7 @@ public class Person {
 
     }
 
-        public String firstName;
+        private String firstName;
         private String lastName;
 //        public static long worldPopulation = 7_500_000_000L;
 //        private String ssn;
