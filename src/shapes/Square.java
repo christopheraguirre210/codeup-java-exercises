@@ -13,7 +13,9 @@ public class Square extends Rectangle {
 
     @Override
     public double getArea(){
+//        both of these answers below will work;
         return super.length * super.width;
+//        return Math.pow(super.length, 2);
     }
 
 
