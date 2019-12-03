@@ -3,12 +3,9 @@ public class Person {
     public static void main(String[] args) {
 
 
-        Person chris = new Person("Chris");
-        System.out.println(chris.getName());
-//        System.out.println(chris.getLastName());
-//        System.out.println(chris.setFirstName("Aggie"));
-        System.out.println(chris.sayHello());
-
+        Person christof = new Person("Chris");
+        System.out.println(christof.getName());
+        christof.sayHello();
 
     }
 
@@ -44,8 +41,10 @@ public class Person {
         this.name = name;
     }
 
-    public String sayHello() {
-        return String.format("%s says Hello!", name);
+    public void sayHello() {
+        System.out.println(this.name + " says Hello!");
     }
+
+
 
 }

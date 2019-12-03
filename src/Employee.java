@@ -9,8 +9,8 @@ public class Employee extends Person {
         }
 
         @Override
-        public String sayHello(){
-            return ("How can I help you");
+        public void sayHello(){
+            System.out.println("How can I help you");
         }
 
 
