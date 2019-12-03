@@ -17,11 +17,11 @@ public class Oopimplementation {
 
         Person person1 = new Person("Michelle");
         Person person2 = person1;
-        System.out.println(person1.getFirstName());
-        System.out.println(person2.getFirstName());
-        person2.setFirstName("Chris");
-        System.out.println(person1.getFirstName());
-        System.out.println(person2.getFirstName());
+        System.out.println(person1.getName());
+        System.out.println(person2.getName());
+        person2.setName("Chris");
+        System.out.println(person1.getName());
+        System.out.println(person2.getName());
 
     }
 }

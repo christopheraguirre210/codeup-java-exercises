@@ -23,13 +23,13 @@ public class ArraysExercises {
         people[2] = new Person("Riley");
 
         for (Person person : people) {
-            System.out.println(person.getFirstName());
+            System.out.println(person.getName());
         }
 
        people = addPerson(people, new Person ("yadda"));
 
         for (Person person : people) {
-            System.out.println(person.getFirstName());
+            System.out.println(person.getName());
         }
 
 
