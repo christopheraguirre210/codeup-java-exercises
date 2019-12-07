@@ -1,18 +1,14 @@
 package util;
 import java.util.Scanner;
 
-public class Input {
+public class Input extends Exception{
 
     public static void main(String[] args) {
         Input input = new Input();
 
-        System.out.println("What's your name?");
-        System.out.println(input.getString());
-        System.out.println(input.getInt(1,10));
-
-        System.out.println(input.getDouble(1,10));
-
-        System.out.println(input.yesNo());
+        input.yesNo();
+        input.getInt(1,10);
+        input.getDouble(1,10);
 
     }
 
@@ -33,35 +29,46 @@ public class Input {
     }
 
     public int getInt(int min, int max) {
-        int inputNum = getInt();
-        if (inputNum < min) {
-            return getInt(min, max);
-        } else if (inputNum > max) {
-            return getInt(min, max);
+        int inputNum = Integer.valueOf(getString());
+        try {
+            if (inputNum < min)
+                return getInt(min, max);
+            } catch(Exception e){
+                System.out.println("Enter a number");
+                getInt(min, max);
+            }
+            System.out.println("You're number is " + inputNum);
+            return inputNum;
+
         }
-        return inputNum;
-    }
+
+
 
     public int getInt(){
-//        System.out.println("Give me a number");
+        System.out.println("Give me a number");
         return Integer.parseInt(getString());
     }
 
-    public double getDouble(double min, double max){
-        double inputNum = getDouble();
-
-        if(inputNum < min) {
-            return getDouble(min, max);
-        }else if (inputNum > max){
-            return getDouble(min, max);
+    public double getDouble(double min, double max) {
+        System.out.println("Enter a number.");
+        double inputNum = Double.valueOf(getString());
+        try {
+            if (inputNum < min)
+                return getDouble(min, max);
+            } catch (Exception e) {
+                System.out.println("Enter a number");
+                getDouble(min, max);
+            }
+            System.out.println("You're number is " + inputNum);
+            return inputNum;
         }
-        return inputNum;
-    }
 
     public double getDouble(){
-        System.out.println("Give me a point number");
-        return Double.parseDouble(getString());
+        return sc.nextDouble();
     }
+
+
 
 
 }
+
