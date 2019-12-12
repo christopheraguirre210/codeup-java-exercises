@@ -1,14 +1,28 @@
 package util;
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Input extends Exception{
 
     public static void main(String[] args) {
-        Input input = new Input();
-
-        input.yesNo();
-        input.getInt(1,10);
-        input.getDouble(1,10);
+//        Input input = new Input();
+//
+//        input.yesNo();
+//        input.getInt(1,10);
+//        input.getDouble(1,10);
+        String[] names = {"Rick", "Stacey", "Brad", "Becca"};
+        String x;
+        try {
+            x = names[100];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Exception caught!");
+            x = "";
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            System.out.println("This will always run.");
+        }
 
     }
 
@@ -66,6 +80,10 @@ public class Input extends Exception{
     public double getDouble(){
         return sc.nextDouble();
     }
+
+
+
+
 
 
 
