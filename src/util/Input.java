@@ -77,11 +77,6 @@ public class Input extends Exception{
             return inputNum;
         }
 
-    public double getDouble(){
-        return sc.nextDouble();
-    }
-
-
 
 
 
