@@ -1,5 +1,6 @@
 package Christmas;
 
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class Santa {
@@ -23,8 +24,11 @@ public class Santa {
 
         boolean GoodResponse = Response.equalsIgnoreCase("y") || Response.equalsIgnoreCase("yes");
 
+        Reindeer reindeer1 = new Reindeer("Dasher");
+        System.out.println(reindeer1.name);
 
 
 
     }
+
 }
