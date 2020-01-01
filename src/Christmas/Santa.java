@@ -1,6 +1,7 @@
 package Christmas;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -50,7 +51,13 @@ public class Santa {
             System.out.println(deer.getName());
         }
 
+        ArrayList<String> wishlist = new ArrayList<>();
+        wishlist.add(UserInput);
+        System.out.println("wishlist = " + wishlist);
+
     }
+    
+    
 
     public static Reindeer[] addReindeer(Reindeer[] deers, Reindeer deer){
         Reindeer[] newArray = Arrays.copyOf(deers, deers.length + 1);
