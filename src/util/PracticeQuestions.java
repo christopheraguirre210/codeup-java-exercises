@@ -14,5 +14,7 @@ public class PracticeQuestions {
 
     public static void main(String[] args) {
 
+        System.out.println(SimpleAdding(4));
+
     }
 }
