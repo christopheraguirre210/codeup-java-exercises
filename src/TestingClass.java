@@ -30,7 +30,6 @@ public class TestingClass {
             }
             System.out.printf("The geometric mean of the numbers provided is %.2f\n",
                     result);
-
         } while (x != 0);
 
     }
